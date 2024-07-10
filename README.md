@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+# Belly Beans App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Belly Beans App - это веб-приложение для отображения списка вариантов бобов Jelly Belly. Приложение использует React для фронтенда и `react-router-dom` для маршрутизации между страницами.
 
-Currently, two official plugins are available:
+## Функциональность
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Отображение списка вариантов бобов Jelly Belly.
+- Подробная страница для каждого варианта боба, отображающая его описание и атрибуты.
 
-## Expanding the ESLint configuration
+## Установка
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Клонирование репозитория**
 
-- Configure the top-level `parserOptions` property like this:
+   ```
+   git clone https://github.com/WoobotGJR/belly-project.git
+   cd belly-beans-app
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+2. **Установка зависимостей**
+
+   ```
+   npm install
+   ```
+
+## Запуск
+
+Чтобы запустить проект, выполните следующие команды:
+
+```
+npm start
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Это запустит приложение в режиме разработки.
+Откройте [http://localhost:5173](http://localhost:5173), чтобы увидеть приложение в браузере.
+
+## Используемые технологии
+
+- React.js
+- react-router-dom
+- Axios (для взаимодействия с API)
+- CSS для стилей
+
+## Дополнительная информация
+
+- Для работы с API используется Axios.
+- Все компоненты находятся в папке `components`.
+- Страницы приложения находятся в папке `pages`.
+
+## Дополнительные настройки
+
+Если вам нужно настроить API URL или другие параметры, отредактируйте файлы в папке `api` и проверьте файл `App.js` для глобальных настроек.
